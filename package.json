@@ -6,14 +6,22 @@
     "dev": "browser-sync start --server --files scripts.js index.html",
     "copy:html": "cpy ./*.html ./build/",
     "copy:js": "cpy ./*.js ./build/",
-    "build": "concurrently npm:copy:*"
+    "build": "concurrently npm:copy:*",
+    "lint": "eslint *.js ./**/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.13.0",
     "browser-sync": "^3.0.3",
     "concurrently": "^9.0.1",
-    "cpy-cli": "^5.0.0"
+    "cpy-cli": "^5.0.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0"
+  },
+  "description": "- [Vefforritun 1, 2024, fyrirlestur 9.4: Verkefni 8](https://www.youtube.com/watch?v=2Sfcm0KfSaM) - [Vefforritun 1, 2024, fyrirlestur 10.2: Meira um verkefni 8 (24:35)](https://www.youtube.com/watch?v=LBEvRBbXnmM)",
+  "directories": {
+    "lib": "lib"
   }
 }
