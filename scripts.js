@@ -45,20 +45,19 @@ function stringHandler(value) {
   }
 
   /**Finna fjölda sérhljóða **/
-  //   const vowelsElement = document.querySelector(".vowels");
-  //   if (vowelsElement) {
-  //     const number = vowels(value);
-  //     vowelsElement.textContent = number.toString();
-  //   }
-  //Kommentað út því ég fékk þetta ekki til að virka
+  const vowelsElement = document.querySelector(".vowels");
+  if (vowelsElement) {
+    const number = vowels(value);
+    vowelsElement.textContent = number.toString();
+  }
+
 
   /**Finna fjölda samhljóða **/
-  //   const consonantsElement = document.querySelector(".consonants");
-  //   if (consonantsElement) {
-  //     const number = consonants(value);
-  //     consonantsElement.textContent = number.    toString();
-  //   }
-  //Kommentað út því ég fékk þetta ekki til að virka
+  const consonantsElement = document.querySelector(".consonants");
+  if (consonantsElement) {
+    const number = consonants(value);
+    consonantsElement.textContent = number.toString();
+  }
 
   /**Athuga hvort sé palindrome*/
   const palindromeElement = document.querySelector(".palindrome");
